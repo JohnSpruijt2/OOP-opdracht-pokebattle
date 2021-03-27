@@ -1,0 +1,43 @@
+@font-face{
+    font-family: minecraft;
+    src: url('Minecraft.ttf');
+}
+body {
+    background-image: url(../img/background3.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #A0CEFF;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.backgroundDiv {
+    width: 60rem;
+    height: 40rem;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 2%;
+    margin: 0 auto;
+    padding: 0.5rem;
+}
+.title {
+    margin: 2rem;
+}
+.choiceBtn {
+    display: inline-block;
+    line-height: 7rem;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-family: minecraft;
+    font-size: 2rem;
+    height: 7rem;
+    width: 18rem;
+    background-color: grey;
+    border-radius: 20%;
+    border: green 0.2rem solid;
+    box-sizing: border-box;
+}
+.choiceBtn:hover {
+    background-color: rgb(63, 63, 63);
+    color: white;
+    cursor: pointer;
+}
