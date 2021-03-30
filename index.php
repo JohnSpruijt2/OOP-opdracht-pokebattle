@@ -1,11 +1,7 @@
 <?php
 require_once 'init.php';
 
-if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $pokemon = new $_POST['pokemon']($_POST['name']);
 
-    echo $pokemon->getName().' use '.$pokemon->getAttack(0)['name'].'!';
-}
 
 if ($_GET['page'] == null) {
     $page = 'choosePokemon';
@@ -32,15 +28,6 @@ if ($_GET['page'] == null) {
 
 
 
-<?php if ($_SERVER['REQUEST_METHOD'] != 'POST') { ?>
-<form action="" method="post">
-    <label for="name">name :</label> <br>
-    <input id="name" name="name" type="text"> <br>
-    <input type="radio" id="pikachu" name="pokemon" value="pikachu" checked> <label for="pikachu">Pikachu</label>
-    <input type="radio" id="charmeleon" name="pokemon" value="charmeleon"> <label for="charmeleon">charmeleon</label> <br>
-    <button type="submit">submit</button>
-</form>
-<?php } ?>
 
 
 </body>

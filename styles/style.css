@@ -20,6 +20,7 @@ body {
 }
 .title {
     margin: 2rem;
+    font-size: 5rem;
 }
 .choiceBtn {
     display: inline-block;
@@ -27,7 +28,6 @@ body {
     color: black;
     text-align: center;
     text-decoration: none;
-    font-family: minecraft;
     font-size: 2rem;
     height: 7rem;
     width: 18rem;
@@ -40,4 +40,29 @@ body {
     background-color: rgb(63, 63, 63);
     color: white;
     cursor: pointer;
+}
+.minecraft {
+    font-family: minecraft;
+}
+.centerForm {
+    align-items: center;
+    text-align: center;
+}
+.formBtn {
+    cursor: pointer;
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    line-height: 1rem;
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    height: 2rem;
+    border: green 0.2rem solid;
+    background-color: grey;
+    box-sizing: border-box;
+}
+.formBtn:hover {
+    background-color: rgb(63, 63, 63);
+    color: white;
 }
