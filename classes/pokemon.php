@@ -8,8 +8,11 @@ class pokemon {
     public $weakness;
     public $resistance;
 
+    public function takeDamage($amount, $type) {
+        $this->currentHealth - $amount;
+    }
 
-    public function test() {
-        return $this->name;
+    public function getCurrentHealth() {
+        return $this->currentHealth;
     }
 }

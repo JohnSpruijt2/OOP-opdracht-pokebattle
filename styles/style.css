@@ -66,3 +66,26 @@ body {
     background-color: rgb(63, 63, 63);
     color: white;
 }
+.pokemonImg {
+    display: inline;
+    max-width: 20rem;
+    max-height: 20rem;
+    margin: 2rem 0;
+}
+.flipped {
+    transform: scaleX(-1);
+}
+.leftPokemon {
+    display: inline-block;
+    max-width: 20rem;
+    height: 30rem;
+}
+.rightPokemon {
+    display: inline-block;
+    max-width: 20rem;
+    height: 30rem;
+}
+#hereToCenterDivs {
+    display: flex;
+    justify-content: space-around
+}

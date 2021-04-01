@@ -1,6 +1,6 @@
 <?php
 require_once 'init.php';
-
+session_start();
 
 
 if ($_GET['page'] == null) {
