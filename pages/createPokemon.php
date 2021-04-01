@@ -1,12 +1,7 @@
 <?php
 
-$_SESSION['playerPokemon'] = new $_POST['pokemonType']($_POST['pokemonName']);
-
-if (mt_rand(1,2) == 1) {
-    $_SESSION['enemyPokemon'] = new pikachu("gary's pikachu");
-} else {
-    $_SESSION['enemyPokemon'] = new charmeleon("gary's charmeleon");
-}
+$_SESSION['leftPokemon'] = new pikachu('pika');
+$_SESSION['rightPokemon'] = new charmeleon('gary');
 
 header('Location: ?page=battle');
 

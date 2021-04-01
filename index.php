@@ -4,7 +4,7 @@ session_start();
 
 
 if ($_GET['page'] == null) {
-    $page = 'choosePokemon';
+    $page = 'start';
 } else {
     $page = $_GET['page'];
 }
@@ -22,14 +22,7 @@ if ($_GET['page'] == null) {
     <title>Pokebattle</title>
 </head>
 <body>
-<?php require_once 'pages/'.$page.'.php'; ?>
-
-
-
-
-
-
-
+    <?php require_once 'pages/'.$page.'.php'; ?>
 </body>
 </html>
 
