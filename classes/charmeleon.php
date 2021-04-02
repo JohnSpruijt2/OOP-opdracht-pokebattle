@@ -5,6 +5,8 @@ class charmeleon extends pokemon {
     public $pokemonType = 'charmeleon';
     
     public function __construct($name) {
+        $this::$counter++;
+
         $this->name = $name;
         $this->type = 'fire';
         $this->maxHealth = 60;
@@ -15,17 +17,5 @@ class charmeleon extends pokemon {
         $this->attacks[0] = $attack1->createAttack();
         $attack2 = new attack('flare' , 30);
         $this->attacks[1] = $attack2->createAttack();
-    }
-
-    public function getName() {
-        return $this->name;
-    }
-
-    public function getAttack($number) {
-        return $this->attacks[$number];
-    }
-
-    public function getPokemonType() {
-        return $this->pokemonType;
     }
 }
