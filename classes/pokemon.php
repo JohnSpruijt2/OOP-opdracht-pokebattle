@@ -14,10 +14,6 @@ class pokemon {
     {   
         return self::$counter;
     }
-
-    public static function updatePopulation ($n) {
-        self::$counter = $n;
-    }
     
     public function takeDamage($amount, $type) {
         if ($type == $this->weakness[0]) {
