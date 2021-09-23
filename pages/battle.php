@@ -1,5 +1,5 @@
 <?php 
-    if (is_numeric($_POST['step']) == null && $_POST['step'] != null) 
+    if (is_numeric($_POST['step']) == null && $_POST['step'] != null) //check to see if you are not manipulating the program
     {
         header('Location: ?page=start');
     }

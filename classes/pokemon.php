@@ -1,7 +1,7 @@
 <?php 
 
 class pokemon {
-    public static $counter = 0;
+    public static $counter = 0; //counter exists outside of specific object to count all pokemons
 
     public $name;
     public $type;
