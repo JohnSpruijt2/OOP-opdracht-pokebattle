@@ -1,6 +1,6 @@
 <?php 
 
-class pokemon {
+class Pokemon {
     public static $counter = 0; //counter exists outside of specific object to count all pokemons
 
     public $name;
@@ -9,6 +9,13 @@ class pokemon {
     public $currentHealth;
     public $weakness;
     public $resistance;
+    public $attacks = array();
+
+    public function __construct($name, $health) {
+        $this->name = $name;
+        $this->maxHealth = $health;
+        $this->currentHealth = $health;
+    }
 
     public static function getPopulation()
     {   

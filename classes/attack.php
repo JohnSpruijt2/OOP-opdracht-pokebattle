@@ -1,15 +1,11 @@
 <?php 
 
-class attack {
-    public $attack = array();
+class Attack {
+    public $name;
+    public $damage;
     public function __construct($name, $damage) 
     {
-        $this->attack['name'] = $name;
-        $this->attack['damage'] = $damage;
+        $this->name = $name;
+        $this->damage = $damage;
     }
-    public function createAttack() 
-    {
-        return $this->attack;
-    }
-   
 }
