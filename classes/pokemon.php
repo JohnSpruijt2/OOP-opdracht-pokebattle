@@ -12,6 +12,7 @@ class Pokemon {
     public $attacks = array();
 
     public function __construct($name, $health) {
+        $this::$counter++;  //increases population counter
         $this->name = $name;
         $this->maxHealth = $health;
         $this->currentHealth = $health;

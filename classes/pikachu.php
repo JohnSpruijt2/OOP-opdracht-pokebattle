@@ -5,8 +5,6 @@ class Pikachu extends Pokemon {
     public $pokemonType = 'pikachu';
 
     public function __construct($name) {
-        $this::$counter++;  //increases population counter
-
         parent::__construct($name, 60);
         $this->type = 'electric';
         $this->weakness = ['fire', 1.5];
